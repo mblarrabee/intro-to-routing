@@ -10,7 +10,7 @@
         controller: 'ShowOrdersController'
       }).
       otherwise({
-        redirectTo: '...'
+        redirectTo: '/AddNewOrder'
       });
 
 //if the route is empty use the default(empty) route
@@ -25,7 +25,7 @@
         controller: 'ShowOrdersController'
       }).
       otherwise({
-        ...: '...'
+        redirectTo: '/AddNewOrder'
       });
 
  //if the route is empty use the default(empty) route
@@ -39,6 +39,6 @@
         templateUrl: 'templates/show_orders.html',
         controller: 'ShowOrdersController'
       }).
-      ...({
-        ...: '...'
+      otherwise({
+        redirectTo: '/AddNewOrder'
       });
